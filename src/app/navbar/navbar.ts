@@ -7,14 +7,19 @@ import { AddForm } from '../add-form/add-form';
 import { DeleteForm } from '../delete-form/delete-form';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { EditForm } from '../edit-form/edit-form';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { Navegacion } from '../../shared/enums/navegacion';
+
+
 
 @Component({
   selector: 'app-navbar',
-  imports: [StudentsTable, CommonModule, AddForm, DeleteForm, MatSnackBarModule, EditForm],
+  imports: [StudentsTable, CommonModule, AddForm, DeleteForm, MatSnackBarModule, EditForm, RouterLink, RouterOutlet],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css'
 })
 export class Navbar {
+  rutas = Navegacion
   @Output() sectionChanged = new EventEmitter<string>();
 
   students: Student[] = [];
