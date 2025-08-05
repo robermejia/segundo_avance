@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="row">
+
+        <!-- Sidebar Izquierda -->
+        <nav class="col-md-3 col-lg-2 d-md-block sidebar p-3">
+            <h5 class="fw-bold mb-3">Acciones</h5>
+            <ul class="nav flex-column">
+                <li (click)="navigate('students')">
+                    <a class="nav-link active" href="#">Ver lista de estudiantes</a>
+                </li>
+                <li (click)="navigate('add')">
+                    <a class="nav-link" href="#">Agregar</a>
+                </li>
+                <li (click)="navigate('edit')">
+                    <a class="nav-link" href="#">Modificar</a>
+                </li>
+                <li (click)="navigate('delete')">
+                    <a class="nav-link" href="#">Eliminar</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Contenido Principal -->
+        <main class="col-md-9 ms-sm-auto col-lg-10 content">
+
+            <ng-container *ngIf="activeSection === 'students'">
+                <app-students-table [students]="students"></app-students-table>
+            </ng-container>
+
+            <ng-container *ngIf="activeSection === 'add'">
+                <app-add-form (studentAdded)="addStudent($event)"></app-add-form>
+            </ng-container>
+
+            <ng-container *ngIf="activeSection === 'delete'">
+
+                <app-delete-form (studentDeleted)="deleteStudent($event)"></app-delete-form>
+
+            </ng-container>
+
+            <ng-container *ngIf="activeSection === 'edit'">
+                <app-edit-form (studentEdited)="editStudent($event)"></app-edit-form>
+            </ng-container>
+
+
+        </main>
+
+
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
