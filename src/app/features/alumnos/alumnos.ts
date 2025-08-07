@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { AlumnosAPI } from './alumnos-api';
 import { Student } from '../../../shared/entities';
-import { JsonPipe } from '@angular/common';
+import { CommonModule, JsonPipe } from '@angular/common';
+import { StudentsTable } from '../../students-table/students-table';
 
 @Component({
   selector: 'app-alumnos',
-  imports: [JsonPipe],
+  imports: [JsonPipe, CommonModule, StudentsTable],
   templateUrl: './alumnos.html',
   styleUrl: './alumnos.css'
 })
@@ -19,6 +20,6 @@ export class Alumnos {
     this.alumnosApi.getAlumnos().subscribe(alumnos => {
       this.alumnos = alumnos;
     });
-  }
 
+  }
 }

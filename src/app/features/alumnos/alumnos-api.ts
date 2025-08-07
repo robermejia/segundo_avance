@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Student } from '../../../shared/entities';
-import { Observable } from 'rxjs';
+import { delay, Observable } from 'rxjs';
 import { DbRoutes } from '../../../shared/enums/enums';
 
 @Injectable({
@@ -15,6 +15,6 @@ export class AlumnosAPI {
 
   getAlumnos(): Observable<Student[]> {
     //Usar Enums
-    return this.http.get<Student[]>(`${this.baseUrl}/${DbRoutes.Students}`);
+    return this.http.get<Student[]>(`${this.baseUrl}/${DbRoutes.Students}`).pipe(delay(1000));
   }
 }
