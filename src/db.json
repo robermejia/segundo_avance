@@ -27,20 +27,52 @@
     ],
     "students": [
         {
-            "name": "Ana",
-            "surname": "Martínez",
-            "age": 19,
-            "id": "4",
-            "dni": "4",
-            "average": 8
-        },
-        {
             "name": "Luis",
             "surname": "Fernández",
             "age": 23,
             "id": "5",
             "dni": 23456789,
             "average": 9.5
+        },
+        {
+            "name": "Marta",
+            "surname": "Gómez",
+            "age": 21,
+            "id": "6",
+            "dni": 34567890,
+            "average": 7.5
+        },
+        {
+            "name": "Carlos",
+            "surname": "López",
+            "age": 22,
+            "id": "7",
+            "dni": 45678901,
+            "average": 8.2
+        },
+        {
+            "name": "Lucía",
+            "surname": "Pérez",
+            "age": 20,
+            "id": "8",
+            "dni": 56789012,
+            "average": 9.1
+        },
+        {
+            "name": "Ana",
+            "surname": "Martínez",
+            "age": 24,
+            "id": "9",
+            "dni": 67890123,
+            "average": 6.8
+        },
+        {
+            "name": "Javier",
+            "surname": "Sánchez",
+            "age": 23,
+            "id": "10",
+            "dni": 78901234,
+            "average": 8.9
         }
     ]
 }

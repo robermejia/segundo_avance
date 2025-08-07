@@ -14,6 +14,6 @@ export class AlumnosAPI {
   ) { }
   getAlumnos(): Observable<Student[]> {
     //PREFERIR ENUM, hardcodear students o courses
-    return this.http.get<Student[]>(`${this.baseUrl}/${DbRoutes.Students}`).pipe(delay(1000));
+    return this.http.get<Student[]>(`${this.baseUrl}/${DbRoutes.Students}`);
   }
 }
