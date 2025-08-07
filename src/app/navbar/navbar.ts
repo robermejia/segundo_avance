@@ -8,7 +8,8 @@ import { DeleteForm } from '../delete-form/delete-form';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { EditForm } from '../edit-form/edit-form';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { Navegacion } from '../../shared/enums/navegacion';
+import { Navegacion } from '../../shared/enums/enums';
+
 
 
 

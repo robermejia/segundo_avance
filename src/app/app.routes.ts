@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { Alumnos } from './features/alumnos/alumnos';
-import { Navegacion } from '../shared/enums/navegacion';
+import { Navegacion } from '../shared/enums/enums';
+
 
 
 export const routes: Routes = [
