@@ -1,10 +1,10 @@
 export enum DbRoutes {
-    Students = 'students',
     Courses = 'courses',
-    Enrollments = 'enrollments'
+    Students = 'students'
 }
 export enum Navegacion {
     Alumnos = 'alumnos',
+    ViewStudent = 'view-student',
     Cursos = 'cursos',
     Inscripciones = 'inscripciones'
 }

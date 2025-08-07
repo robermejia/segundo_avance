@@ -8,13 +8,12 @@ import { DbRoutes } from '../../../shared/enums/enums';
   providedIn: 'root'
 })
 export class AlumnosAPI {
-  baseUrl = 'http://localhost:3000'; // Cambia esto por tu URL base real
+  baseUrl = "http://localhost:3000";
   constructor(
     private http: HttpClient
-  ) {}
-
+  ) { }
   getAlumnos(): Observable<Student[]> {
-    //Usar Enums
+    //PREFERIR ENUM, hardcodear students o courses
     return this.http.get<Student[]>(`${this.baseUrl}/${DbRoutes.Students}`).pipe(delay(1000));
   }
 }

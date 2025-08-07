@@ -11,15 +11,16 @@ import { StudentsTable } from '../../students-table/students-table';
   styleUrl: './alumnos.css'
 })
 export class Alumnos {
-  alumnos: Student[] = [];
-
-  // Inyectar el servicio AlumnosAPI
+  alumnos!: Student[];
   constructor(private alumnosApi: AlumnosAPI) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    // cuando llegan los datos, hacer esto
+    // 
     this.alumnosApi.getAlumnos().subscribe(alumnos => {
       this.alumnos = alumnos;
     });
+
 
   }
 }

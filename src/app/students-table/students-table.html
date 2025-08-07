@@ -6,7 +6,7 @@
     <!-- Full Name Column -->
     <ng-container matColumnDef="fullname">
         <th mat-header-cell *matHeaderCellDef> Full Name </th>
-        <td mat-cell *matCellDef="let element">  {{ element.name | fullname:element.surname }} </td>
+        <td mat-cell *matCellDef="let element"> {{ element.name | fullname:element.surname }} </td>
     </ng-container>
 
     <!-- Age Column -->
@@ -28,9 +28,9 @@
     <ng-container matColumnDef="actions">
         <th mat-header-cell *matHeaderCellDef> Actions </th>
         <td mat-cell *matCellDef="let element">
-            <button mat-button (click)="viewStudent(element)">View</button>
-            <button mat-button (click)="editStudent(element)">Edit</button>
-            <button mat-button (click)="deleteStudent(element)">Delete</button>
+            <button (click)="viewDetails(element)" mat-button>View</button>
+            <!--    <button (click)="editStudent(element)" mat-button>Edit</button>
+            <button (click)="deleteStudent(element)" mat-button>Delete</button> -->
         </td>
     </ng-container>
 

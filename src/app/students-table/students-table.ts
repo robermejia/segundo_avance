@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Student } from '../../shared/entities';
 
-import {MatTableModule} from '@angular/material/table';
+import { MatTableModule } from '@angular/material/table';
 import { FullnamePipe } from '../../shared/pipes/fullname-pipe';
 import { Router } from '@angular/router';
 
@@ -16,17 +16,15 @@ import { Router } from '@angular/router';
 export class StudentsTable {
   @Input() students: Student[] = [];
 
-  displayedColumns: string[] = ['fullname' , 'age', 'dni', 'average', 'actions'];
+  displayedColumns: string[] = ['fullname', 'age', 'dni', 'average', "actions"];
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
-  viewStudent(student: Student) {
-    this.router.navigate(['/view-students', {
+
+  viewDetails(student: Student) {
+    this.router.navigate(['/view-student'], {
       state: { student }
-    }]);
+    });
   }
-
-
-
 
 }
