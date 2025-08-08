@@ -13,6 +13,7 @@ import { Router, RouterModule } from '@angular/router';
 })
 export class StudentsTable {
   @Input() students: Student[] = [];
+
   @Output() deleteEvent = new EventEmitter<Student>();
 
   displayedColumns: string[] = ['fullname', 'age', 'dni', 'average', "actions"];
@@ -31,11 +32,11 @@ export class StudentsTable {
     this.deleteEvent.emit(student);
   }
 
-  // similar feature to edit student, 
-  // formulario reactivo 
-  // editStudent(student: Student) {
-  //   this.router.navigate(['/edit-student'], {
-  //     state: { student: student }
-  //   });
-  // }
+  editStudent(student: Student) {
+    this.router.navigate(['/edit-student'], {
+      state: { student }
+    });
+  }
+
+
 }

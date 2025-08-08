@@ -21,5 +21,11 @@ export class AlumnosAPI {
   deleteAlumno(student: Student): Observable<void> {
     return this.http.delete<void>(`${this.baseUrl}/${DbRoutes.Students}/${student.dni}`);
   }
-  
+
+  updateAlumno(student: Student): Observable<Student> {
+    return this.http.put<Student>(`${this.baseUrl}/${DbRoutes.Students}/${student.dni}`, student);
+  }
+
+
+
 }

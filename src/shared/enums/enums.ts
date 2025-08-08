@@ -5,6 +5,7 @@ export enum DbRoutes {
 export enum Navegacion {
     Alumnos = 'alumnos',
     ViewStudent = 'view-student',
+    EditStudent = "edit-student",
     Cursos = 'cursos',
     Inscripciones = 'inscripciones'
 }
