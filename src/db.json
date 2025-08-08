@@ -1,78 +1,150 @@
 {
-    "courses": [
-        {
-            "name": "Matemáticas",
-            "code": "MAT101",
-            "credits": 5,
-            "id": "d3fd"
-        },
-        {
-            "name": "Programación",
-            "code": "PROG102",
-            "credits": 6,
-            "id": "570f"
-        },
-        {
-            "name": "Física",
-            "code": "FIS103",
-            "credits": 4,
-            "id": "00db"
-        },
-        {
-            "name": "Química",
-            "code": "QUI104",
-            "credits": 3,
-            "id": "2eb4"
-        }
-    ],
-    "students": [
-        {
-            "name": "Luis",
-            "surname": "Fernández",
-            "age": 23,
-            "id": "5",
-            "dni": 23456789,
-            "average": 9.5
-        },
-        {
-            "name": "Marta",
-            "surname": "Gómez",
-            "age": 21,
-            "id": "6",
-            "dni": 34567890,
-            "average": 7.5
-        },
-        {
-            "name": "Carlos",
-            "surname": "López",
-            "age": 22,
-            "id": "7",
-            "dni": 45678901,
-            "average": 8.2
-        },
-        {
-            "name": "Lucía",
-            "surname": "Pérez",
-            "age": 20,
-            "id": "8",
-            "dni": 56789012,
-            "average": 9.1
-        },
-        {
-            "name": "Ana",
-            "surname": "Martínez",
-            "age": 24,
-            "id": "9",
-            "dni": 67890123,
-            "average": 6.8
-        },
-        {
-            "name": "Javier",
-            "surname": "Sánchez",
-            "age": 23,
-            "id": "10",
-            "dni": 78901234,
-            "average": 8.9
-        }
-    ]
+  "courses": [
+    {
+      "name": "Matemáticas",
+      "code": "MAT101",
+      "credits": 5,
+      "id": "d3fd"
+    },
+    {
+      "name": "Programación",
+      "code": "PROG102",
+      "credits": 6,
+      "id": "570f"
+    },
+    {
+      "name": "Física",
+      "code": "FIS103",
+      "credits": 4,
+      "id": "00db"
+    },
+    {
+      "name": "Química",
+      "code": "QUI104",
+      "credits": 3,
+      "id": "2eb4"
+    }
+  ],
+  "students": [
+    {
+      "name": "Pablo",
+      "surname": "Jiménez",
+      "age": 23,
+      "id": "14",
+      "dni": 14,
+      "average": 8.6
+    },
+    {
+      "name": "Ana",
+      "surname": "García",
+      "age": 22,
+      "id": "15",
+      "dni": 15,
+      "average": 9.1
+    },
+    {
+      "name": "Luis",
+      "surname": "Martínez",
+      "age": 24,
+      "id": "16",
+      "dni": 16,
+      "average": 7.8
+    },
+    {
+      "name": "María",
+      "surname": "López",
+      "age": 21,
+      "id": "17",
+      "dni": 17,
+      "average": 8.3
+    },
+    {
+      "name": "Carlos",
+      "surname": "Hernández",
+      "age": 23,
+      "id": "18",
+      "dni": 18,
+      "average": 9
+    },
+    {
+      "name": "Laura",
+      "surname": "Gómez",
+      "age": 22,
+      "id": "19",
+      "dni": 19,
+      "average": 8.7
+    },
+    {
+      "name": "David",
+      "surname": "Martínez",
+      "age": 25,
+      "id": "20",
+      "dni": 20,
+      "average": 9.2
+    },
+    {
+      "name": "Sara",
+      "surname": "Pérez",
+      "age": 21,
+      "id": "21",
+      "dni": 21,
+      "average": 8.5
+    },
+    {
+      "name": "Javier",
+      "surname": "Sánchez",
+      "age": 24,
+      "id": "22",
+      "dni": 22,
+      "average": 7.9
+    },
+    {
+      "name": "Clara",
+      "surname": "Torres",
+      "age": 23,
+      "id": "23",
+      "dni": 23,
+      "average": 8.8
+    },
+    {
+      "name": "Miguel",
+      "surname": "Ramírez",
+      "age": 22,
+      "id": "24",
+      "dni": 24,
+      "average": 9.3
+    },
+    {
+      "name": "Elena",
+      "surname": "Fernández",
+      "age": 21,
+      "id": "25",
+      "dni": 25,
+      "average": 8.4
+    },
+    {
+      "name": "Andrés",
+      "surname": "Gutiérrez",
+      "age": 23,
+      "id": "26",
+      "dni": 26,
+      "average": 9.1
+    },
+    {
+      "name": "Lucía",
+      "surname": "Moreno",
+      "age": 22,
+      "id": "27",
+      "dni": 27,
+      "average": 8.6
+    },
+    {
+      "name": "Raúl",
+      "surname": "Vázquez",
+      "age": 24,
+      "id": "28",
+      "dni": 28,
+      "average": 7.7
+    }
+  ]
 }

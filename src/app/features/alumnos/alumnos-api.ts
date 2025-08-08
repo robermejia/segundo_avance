@@ -16,4 +16,10 @@ export class AlumnosAPI {
     //PREFERIR ENUM, hardcodear students o courses
     return this.http.get<Student[]>(`${this.baseUrl}/${DbRoutes.Students}`);
   }
+
+
+  deleteAlumno(student: Student): Observable<void> {
+    return this.http.delete<void>(`${this.baseUrl}/${DbRoutes.Students}/${student.dni}`);
+  }
+  
 }
