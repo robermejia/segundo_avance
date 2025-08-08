@@ -6,3 +6,10 @@ export interface Student {
     dni: number;
     average: number;
 }
+
+export interface Course {
+    id: string;
+    name: string;
+    code: string;
+    credits: number;
+}
