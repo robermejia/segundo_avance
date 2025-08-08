@@ -7,41 +7,37 @@ import { switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-alumnos',
-  imports: [CommonModule, JsonPipe, StudentsTable],
+  imports: [CommonModule, StudentsTable],
   templateUrl: './alumnos.html',
   styleUrls: ['./alumnos.css']
 })
 export class Alumnos {
-  alumnos!: Student[];
+  alumnos: Student[] = [];
+  isLoading: boolean = true;
+
   constructor(private alumnosApi: AlumnosAPI) { }
 
   ngOnInit() {
-    // cuando llegan los datos, hacer esto
-    // 
+    this.getAlumnos();
+  }
+
+  getAlumnos() {
+    this.isLoading = true;
     this.alumnosApi.getAlumnos().subscribe(alumnos => {
       this.alumnos = alumnos;
+      this.isLoading = false;
     });
-
-
   }
 
   deleteStudent(student: Student) {
     console.log("Eliminando alumno", student);
-    // switch map and ask get alumnos again
-    this.alumnosApi.deleteAlumno(student).subscribe(() => {
-      this.alumnosApi.getAlumnos().subscribe(alumnos => {
-        this.alumnos = alumnos;
-      });
-    });
 
+    this.isLoading = true;
     this.alumnosApi.deleteAlumno(student).pipe(
-      //delete termina, volve a preguntar a preguntar
       switchMap(() => this.alumnosApi.getAlumnos())
     ).subscribe(alumnos => {
       this.alumnos = alumnos;
+      this.isLoading = false;
     });
-    //    this.alumnos = this.alumnos.filter(alumno => alumno.dni !== student.dni);
-    //  get student data again
-
   }
 }

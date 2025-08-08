@@ -9,7 +9,6 @@ import { Student } from '../../../../shared/entities';
   selector: 'app-view-student',
   standalone: true,
   imports: [
-    JsonPipe,
     NgIf,
     NgClass, // ✅ Asegúrate de incluirlo aquí
     MatCardModule,

@@ -15,7 +15,7 @@ import { Navegacion } from '../../shared/enums/enums';
 
 @Component({
   selector: 'app-navbar',
-  imports: [StudentsTable, CommonModule, AddForm, DeleteForm, MatSnackBarModule, EditForm, RouterLink, RouterOutlet],
+  imports: [CommonModule, MatSnackBarModule, RouterLink, RouterOutlet],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css'
 })

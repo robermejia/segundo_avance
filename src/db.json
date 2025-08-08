@@ -28,19 +28,11 @@
   "students": [
     {
       "name": "Ana",
-      "surname": "García",
+      "surname": "Mejía",
       "age": 22,
       "id": "15",
       "dni": 15,
       "average": 9.1
-    },
-    {
-      "name": "Carlos",
-      "surname": "Hernández",
-      "age": 23,
-      "id": "18",
-      "dni": 18,
-      "average": 9
     },
     {
       "name": "Laura",
