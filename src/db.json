@@ -27,92 +27,76 @@
   ],
   "students": [
     {
-      "name": "Ana",
-      "surname": "Mejía",
-      "age": 22,
-      "id": "15",
-      "dni": 15,
-      "average": 9.1
-    },
-    {
-      "name": "Laura",
-      "surname": "Gómez",
-      "age": 22,
-      "id": "19",
-      "dni": 19,
+      "name": "María",
+      "surname": "Torres",
+      "age": 20,
+      "id": "33",
+      "dni": 33,
       "average": 8.7
     },
     {
-      "name": "David",
-      "surname": "Martínez",
-      "age": 25,
-      "id": "20",
-      "dni": 20,
+      "name": "Juan",
+      "surname": "Pérez",
+      "age": 22,
+      "id": "44",
+      "dni": 44,
       "average": 9.2
     },
     {
-      "name": "Sara",
-      "surname": "Pérez",
+      "name": "Ana",
+      "surname": "Gómez",
       "age": 21,
-      "id": "21",
-      "dni": 21,
+      "id": "55",
+      "dni": 55,
       "average": 8.5
     },
     {
-      "name": "Javier",
-      "surname": "Sánchez",
-      "age": 24,
-      "id": "22",
-      "dni": 22,
-      "average": 7.9
+      "name": "Luis",
+      "surname": "Martínez",
+      "age": 23,
+      "id": "66",
+      "dni": 66,
+      "average": 9
     },
     {
-      "name": "Clara",
-      "surname": "Torres",
-      "age": 23,
-      "id": "23",
-      "dni": 23,
+      "name": "Sofía",
+      "surname": "Ramírez",
+      "age": 19,
+      "id": "77",
+      "dni": 77,
       "average": 8.8
     },
     {
-      "name": "Miguel",
-      "surname": "Ramírez",
-      "age": 22,
-      "id": "24",
-      "dni": 24,
-      "average": 9.3
-    },
-    {
-      "name": "Elena",
-      "surname": "Fernández",
-      "age": 21,
-      "id": "25",
-      "dni": 25,
-      "average": 8.4
-    },
-    {
-      "name": "Andrés",
-      "surname": "Gutiérrez",
-      "age": 23,
-      "id": "26",
-      "dni": 26,
+      "name": "Pedro",
+      "surname": "Hernández",
+      "age": 25,
+      "id": "88",
+      "dni": 88,
       "average": 9.1
     },
     {
       "name": "Lucía",
-      "surname": "Moreno",
-      "age": 22,
-      "id": "27",
-      "dni": 27,
+      "surname": "García",
+      "age": 20,
+      "id": "99",
+      "dni": 99,
       "average": 8.6
     },
     {
-      "name": "Raúl",
-      "surname": "Vázquez",
-      "age": 24,
-      "id": "28",
-      "dni": 28,
-      "average": 7.7
+      "name": "Javier",
+      "surname": "Fernández",
+      "age": 22,
+      "id": "101",
+      "dni": 101,
+      "average": 9.3
+    },
+    {
+      "name": "Isabel",
+      "surname": "Mejia",
+      "age": 21,
+      "id": "112",
+      "dni": 112,
+      "average": 8.4
     }
   ]
 }
